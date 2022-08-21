@@ -44,4 +44,11 @@ pub fn run() {
     println!("The value of y is: {}", y);
     println!("The value of z is: {}", z);
     println!("The value of t1 is: {} {} {}", t1.0, t1.1, t1.2);
+
+    let mut t2 = ((0, 1), (2, 3));
+    println!("{:?}", t2);
+    let ((ref mut x1_ptr, ref mut y1_ptr), _) = t2;
+    *x1_ptr = 5;
+    *y1_ptr = 6;
+    println!("{:#?}", t2);
 }
