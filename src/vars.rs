@@ -5,4 +5,7 @@ pub fn run() {
     println!("The value of x is: {}", x);
     x = 6;
     println!("The value of x is: {}", x);
+
+    let _i1 = 3;
+    let _f1 = 0.1;
 }
