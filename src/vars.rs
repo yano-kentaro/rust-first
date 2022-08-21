@@ -37,4 +37,11 @@ pub fn run() {
         println!("The value of y is: {}", y);
     }
     println!("The value of y is: {}", y);
+
+    let t1 = (500, 6.4, "hello");
+    let (x, y, z) = t1;
+    println!("The value of x is: {}", x);
+    println!("The value of y is: {}", y);
+    println!("The value of z is: {}", z);
+    println!("The value of t1 is: {} {} {}", t1.0, t1.1, t1.2);
 }
