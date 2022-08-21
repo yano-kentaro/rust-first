@@ -1,3 +1,5 @@
+const _MAX_POINTS: i32 = 100_000;
+
 pub fn run() {
     println!("Here is vars module!!");
 
