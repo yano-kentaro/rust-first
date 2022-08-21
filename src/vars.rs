@@ -10,4 +10,6 @@ pub fn run() {
 
     let _i1 = 3;
     let _f1 = 0.1;
+
+    println!("{}", usize::BITS);
 }
