@@ -17,4 +17,10 @@ pub fn run() {
         "Memory address of MAX_POINTS is: {:p}",
         &MAX_POINTS as *const i32
     );
+
+    let i2: i64 = 1;
+    let i3: i64 = 2;
+
+    println!("Stack address of i2 is: {:p}", &i2 as *const i64);
+    println!("Stack address of i3 is: {:p}", &i3 as *const i64);
 }
