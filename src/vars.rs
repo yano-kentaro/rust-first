@@ -1,4 +1,4 @@
-const _MAX_POINTS: i32 = 100_000;
+const MAX_POINTS: i32 = 100_000;
 
 pub fn run() {
     println!("Here is vars module!!");
@@ -12,4 +12,9 @@ pub fn run() {
     let _f1 = 0.1;
 
     println!("{}", usize::BITS);
+
+    println!(
+        "Memory address of MAX_POINTS is: {:p}",
+        &MAX_POINTS as *const i32
+    );
 }
