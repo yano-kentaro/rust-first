@@ -23,4 +23,18 @@ pub fn run() {
 
     println!("Stack address of i2 is: {:p}", &i2 as *const i64);
     println!("Stack address of i3 is: {:p}", &i3 as *const i64);
+
+    let y = 5;
+    println!("Stack address of y is: {:p}", &y as *const i32);
+    let y = y + 1;
+    println!("Stack address of y is: {:p}", &y as *const i32);
+    let y = y * 2;
+    println!("Stack address of y is: {:p}", &y as *const i32);
+    println!("The value of y is: {}", y);
+    {
+        let y = 0;
+        println!("Stack address of y is: {:p}", &y as *const i32);
+        println!("The value of y is: {}", y);
+    }
+    println!("The value of y is: {}", y);
 }
