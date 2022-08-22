@@ -64,4 +64,13 @@ pub fn run() {
     println!("Static memory address of s2 is: {:?}", s2.as_ptr());
     println!("Len of s1 is: {}", s1.len());
     println!("Len of s2 is: {}", s2.len());
+
+    let mut s3 = String::from("hello");
+    let mut s4 = String::from("Hello, World!");
+    println!("Stack address of s3 is: {:p}", &s3 as *const String);
+    println!("Stack address of s4 is: {:p}", &s4 as *const String);
+    s3.push_str(", World!");
+    s4.push_str(stringify!(__FILE__));
+    println!("{}", s3);
+    println!("{}", s4);
 }
