@@ -55,4 +55,13 @@ pub fn run() {
     let a1 = [1, 2, 3, 4, 5];
     let a2 = [0; 10];
     println!("{:?} {:?} {} {}", a1, a2, a1[2], a1[3]);
+
+    let s1 = "helloこんにちは挨拶"; // 1byte * 5 + 3bytes * 7 = 26bytes
+    let s2 = "hello"; // 1byte * 5 = 5bytes
+    println!("Stack address of s1 is: {:p}", &s1 as *const &str);
+    println!("Stack address of s2 is: {:p}", &s2 as *const &str);
+    println!("Static memory address of s1 is: {:?}", s1.as_ptr());
+    println!("Static memory address of s2 is: {:?}", s2.as_ptr());
+    println!("Len of s1 is: {}", s1.len());
+    println!("Len of s2 is: {}", s2.len());
 }
